@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func main() {
 	// var card string = "Ace of Spades"
 	// card := "Ace of Spades"
@@ -11,9 +9,10 @@ func main() {
 	cards := deck{"Ace of Diamonds", newCard()}
 	// add item to slice
 	cards = append(cards, "Six of Spades")
-	for i, card := range cards {
-		fmt.Println(i, card)
-	}
+	// for i, card := range cards {
+	// 	fmt.Println(i, card)
+	// }
+	cards.print()
 }
 
 func newCard() string {
