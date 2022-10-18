@@ -6,4 +6,5 @@ func main() {
 	hand, cards := deal(cards, 5)
 	hand.print()
 	cards.print()
+	hand.saveToFile("hand.txt")
 }
