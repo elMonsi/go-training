@@ -3,8 +3,11 @@ package main
 func main() {
 	cards := newDeck()
 
-	hand, cards := deal(cards, 5)
-	hand.print()
-	cards.print()
-	hand.saveToFile("hand.txt")
+	filename := "full_deck.txt"
+	cards.saveToFile(filename)
+
+	cards_new := newDeckFromFile(filename)
+	// cards_new.print()
+	cards_new.shuffle()
+	cards_new.print()
 }
