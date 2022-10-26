@@ -1,0 +1,3 @@
+this is a file
+we want to display this into command line
+go rulz!
